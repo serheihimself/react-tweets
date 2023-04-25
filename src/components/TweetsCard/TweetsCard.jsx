@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Card,
   Logo,
-  Bg_Img,
+  BgImg,
   Img,
   BorderImg,
   ImgBox,
@@ -14,7 +14,7 @@ export default function TweetsCard() {
   return (
     <Card>
       <Logo src={require('../../services/images/logo.png')} alt="my_logo" />
-      <Bg_Img
+      <BgImg
         src={require('../../services/images/bg_img.png')}
         alt="my_bg_img"
       />

@@ -19,7 +19,7 @@ export const Logo = styled.img`
   top: 20px;
   left: 20px;
 `;
-export const Bg_Img = styled.img`
+export const BgImg = styled.img`
   position: absolute;
   top: 28px;
 `;
