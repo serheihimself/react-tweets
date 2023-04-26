@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router';
-import { Home } from '../../pages/Home';
-import { Tweets } from '../../pages/Tweets';
+import Layout from 'components/Layout/Layout';
+import Home from 'pages/Home/Home';
+import Tweets from 'pages/Tweets/Tweets';
 
 export const App = () => {
   return (

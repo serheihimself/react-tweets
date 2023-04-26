@@ -1,4 +1,7 @@
-import { userId, usersGet } from '../services/servicesApi';
+import TweetsList from 'components/TweetsList/TweetsList';
+import { BackLink } from 'components/BackLink/BackLink';
+import LoadMoreBtn from 'components/LoadMoreBtn/LoadMoreBtn';
+import { userId, usersGet } from '../../services/servicesApi';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router';
 
@@ -57,16 +60,16 @@ export default function Tweets() {
   return (
     <div>
       <div>
-        <BackLink to={backLinkHref}>Go back</BackLink>
+        <BackLink to={backLinkHref}>Go to Home</BackLink>
       </div>
-      {isLoader && <Spinner />}
+      {isLoader && <p>Loading...</p>}
 
       {users.length > 0 && (
-        <UsersList users={users} updateUserFollowers={updateUserFollowers} />
+        <TweetsList users={users} updateUserFollowers={updateUserFollowers} />
       )}
 
-      {isVisible && <Btn loadMore={loadMore} />}
-      {error && <Error children={`Something went wrong Try again later.😭`} />}
+      {isVisible && <LoadMoreBtn loadMore={loadMore} />}
+      {error && <p>Something went wrong. Try again later</p>}
     </div>
   );
 }
