@@ -10,7 +10,7 @@ import {
   Button,
 } from 'components//TweetsCard/TweetsCard.styles';
 
-export default function TweetsCard() {
+export default function TweetsCard({ users, follow, handleChangeFollowers }) {
   return (
     <Card>
       <Logo src={require('../../services/images/logo.png')} alt="my_logo" />
