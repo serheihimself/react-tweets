@@ -60,7 +60,7 @@ export default function Tweets() {
 
   return (
     <Container>
-      <BackLink to={backLinkHref}>Go to Home</BackLink>
+      <BackLink to={backLinkHref}>GO TO HOME</BackLink>
       {isLoader && <p>Loading...</p>}
 
       {users.length > 0 && (

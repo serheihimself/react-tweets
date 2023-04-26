@@ -1,5 +1,5 @@
 import { Container } from 'components/Main.styles';
-import { Main, Title } from './Home.styles';
+import { Main, Title, LinkBox } from './Home.styles';
 export default function Home() {
   return (
     <Container>
@@ -10,12 +10,12 @@ export default function Home() {
           GITHUB. You can also contact me directly via LINKEDIN - I'm happy to
           help you!
         </h3>
-        <div>
+        <LinkBox>
           <a href="https://github.com/serheihimself/react-tweets">Github</a>
           <a href="https://www.linkedin.com/in/serhii-mykhailevych/">
             Linkedin
           </a>
-        </div>
+        </LinkBox>
       </Main>
     </Container>
   );

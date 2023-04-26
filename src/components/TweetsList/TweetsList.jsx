@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { usersGet } from '../../services/servicesApi';
 import TweetsCard from 'components/TweetsCard/TweetsCard';
+import { List } from './TweetsList.styles';
 
 export default function TweetsList({ users, updateUserFollowers }) {
   const [allListUsers, setAllListUsers] = useState([]);
@@ -28,12 +29,12 @@ export default function TweetsList({ users, updateUserFollowers }) {
   };
 
   return (
-    <ul>
+    <List>
       <TweetsCard
         users={users}
         handleChangeFollowers={handleChangeFollowers}
         follow={follow}
       />
-    </ul>
+    </List>
   );
 }
