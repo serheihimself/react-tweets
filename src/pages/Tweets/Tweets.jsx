@@ -69,7 +69,7 @@ export default function Tweets() {
       )}
 
       {isVisible && <LoadMoreBtn loadMore={loadMore} />}
-      {error && <p>Something went wrong. Try again later</p>}
+      {error && <p>Oops, something went wrong. Try again later</p>}
     </div>
   );
 }

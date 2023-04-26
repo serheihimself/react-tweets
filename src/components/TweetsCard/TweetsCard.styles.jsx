@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Card = styled.div`
+export const Card = styled.li`
 position: relative;
   width: 380px;
   height: 460px;
