@@ -9,10 +9,10 @@ export default function Home() {
       </h3>
       <div>
         <a href="https://github.com/serheihimself/react-tweets">
-          <img />
+          <img src="" alt="" />
         </a>
         <a href="https://www.linkedin.com/in/serhii-mykhailevych/">
-          <img />
+          <img src="" alt="" />
         </a>
       </div>
     </div>
