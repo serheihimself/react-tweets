@@ -47,11 +47,6 @@ export const ImgBox = styled.div`
   flex-direction: column;
   row-gap: 16px;
 `;
-export const Text = styled.p`
-  margin: 0;
-  color: #ebd8ff;
-  font-size: 20px;
-`;
 export const Button = styled.button`
   font-family: 'Montserrat', sans-serif;
   width: 196px;

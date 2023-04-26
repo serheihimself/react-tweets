@@ -1,17 +1,16 @@
 import { NavLink } from 'react-router-dom';
-// import { HeaderBox } from './Header.styled';
+import { HeaderBox } from './Header.styles';
+import { Text } from 'components/Main.styles';
 
 export default function Header() {
   return (
-    <header>
-      <div>
-        <NavLink to="/">
-          <p>Home</p>
-        </NavLink>
-        <NavLink to="tweets">
-          <p>Tweets</p>
-        </NavLink>
-      </div>
-    </header>
+    <HeaderBox>
+      <NavLink to="/">
+        <Text>Home</Text>
+      </NavLink>
+      <NavLink to="tweets">
+        <Text>Tweets</Text>
+      </NavLink>
+    </HeaderBox>
   );
 }

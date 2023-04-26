@@ -1,6 +1,7 @@
+import { Container } from 'components/Main.styles';
 export default function Home() {
   return (
-    <div>
+    <Container>
       <h2>Welcome to my homepage!</h2>
       <h3>
         If you have any questions you can see the working code on my page
@@ -15,6 +16,6 @@ export default function Home() {
           <img src="" alt="" />
         </a>
       </div>
-    </div>
+    </Container>
   );
 }
