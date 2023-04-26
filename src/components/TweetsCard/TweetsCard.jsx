@@ -6,9 +6,8 @@ import {
   Img,
   BorderImg,
   ImgBox,
-  Button,
 } from 'components//TweetsCard/TweetsCard.styles';
-import { Text } from 'components/Main.styles';
+import { Text, Button } from 'components/Main.styles';
 
 export default function TweetsCard({ users, follow, handleChangeFollowers }) {
   return users.map(({ id, user, tweets, followers, avatar }, index) => (

@@ -1,5 +1,8 @@
+import { Button } from 'components/Main.styles';
 export default function LoadMoreBtn({ loadMore }) {
-  <div>
-    <button onClick={loadMore}>load More</button>
-  </div>;
+  return (
+    <div>
+      <Button onClick={loadMore}>LOAD MORE</Button>
+    </div>
+  );
 }

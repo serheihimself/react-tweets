@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
+import { Button } from 'components/Main.styles';
 
 export const BackLink = ({ to, children }) => {
   return (
-    <button>
-      <NavLink to={to}>{children}</NavLink>
-    </button>
+    <div>
+      <Button>
+        <NavLink to={to}>{children}</NavLink>
+      </Button>
+    </div>
   );
 };

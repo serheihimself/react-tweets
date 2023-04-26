@@ -47,17 +47,3 @@ export const ImgBox = styled.div`
   flex-direction: column;
   row-gap: 16px;
 `;
-export const Button = styled.button`
-  font-family: 'Montserrat', sans-serif;
-  width: 196px;
-  padding: 14px 28px;
-  margin-bottom: 0;
-  background: #ebd8ff;
-  border-radius: 10px;
-  font-size: 18px;
-  line-height: 22px;
-  font-weigth: 500;
-  fill: #373737;
-  cursor: pointer;
-  margin-bottom: 36px;
-`;
