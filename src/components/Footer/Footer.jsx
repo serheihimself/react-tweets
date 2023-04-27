@@ -5,7 +5,7 @@ export default function Footer() {
     <FooterBox>
       <Text>Designed by Serhii Mykhailevych</Text>
       <img src="" alt="" />
-      <Text>GoIT 2023</Text>
+      <Text>© GoIT 2023</Text>
     </FooterBox>
   );
 }

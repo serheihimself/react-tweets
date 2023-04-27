@@ -4,7 +4,7 @@ import LoadMoreBtn from 'components/LoadMoreBtn/LoadMoreBtn';
 import { userId, usersGet } from '../../services/servicesApi';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router';
-import { Container } from 'components/Main.styles';
+import { Container, Main } from 'components/Main.styles';
 
 export default function Tweets() {
   const location = useLocation();
@@ -60,14 +60,16 @@ export default function Tweets() {
 
   return (
     <Container>
-      <BackLink to={backLinkHref}>GO TO HOME</BackLink>
-      {isLoader && <p>Loading...</p>}
+      <Main>
+        <BackLink to={backLinkHref}>GO TO HOME</BackLink>
+        {isLoader && <p>Loading...</p>}
 
-      {users.length > 0 && (
-        <TweetsList users={users} updateUserFollowers={updateUserFollowers} />
-      )}
-      {isVisible && <LoadMoreBtn loadMore={loadMore} />}
-      {error && <p>Oops, something went wrong. Try again later</p>}
+        {users.length > 0 && (
+          <TweetsList users={users} updateUserFollowers={updateUserFollowers} />
+        )}
+        {isVisible && <LoadMoreBtn loadMore={loadMore} />}
+        {error && <p>Oops, something went wrong. Try again later</p>}
+      </Main>
     </Container>
   );
 }

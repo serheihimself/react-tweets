@@ -5,7 +5,14 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   background-color: #ebd8ff;
+`;
+export const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 24px;
+  gap: 24px;
+  min-height: calc(100vh - 174px);
 `;
 export const Text = styled.p`
   margin: 0;
@@ -13,18 +20,18 @@ export const Text = styled.p`
   font-size: 20px;
 `;
 export const Button = styled.button`
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #373737;
   width: 196px;
   padding: 14px 28px;
   margin-bottom: 0;
   background: #ebd8ff;
   border-radius: 10px;
-  font-size: 18px;
-  line-height: 22px;
-  font-weigth: 500;
-  fill: #373737;
   cursor: pointer;
-  margin-bottom: 36px;
   &:hover {
     background: #5cd3a8;
   }

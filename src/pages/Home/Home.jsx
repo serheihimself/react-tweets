@@ -1,5 +1,5 @@
-import { Container } from 'components/Main.styles';
-import { Main, Title, LinkBox } from './Home.styles';
+import { Container, Main } from 'components/Main.styles';
+import { Title, LinkBox } from './Home.styles';
 export default function Home() {
   return (
     <Container>

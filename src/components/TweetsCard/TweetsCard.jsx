@@ -1,4 +1,5 @@
 import React from 'react';
+import { nanoid } from 'nanoid';
 import {
   Card,
   Logo,
@@ -7,11 +8,12 @@ import {
   BorderImg,
   ImgBox,
 } from 'components//TweetsCard/TweetsCard.styles';
-import { Text, Button } from 'components/Main.styles';
+import { Text } from 'components/Main.styles';
+import { CardBtn } from 'components//TweetsCard/TweetsCard.styles';
 
 export default function TweetsCard({ users, follow, handleChangeFollowers }) {
   return users.map(({ id, user, tweets, followers, avatar }, index) => (
-    <Card>
+    <Card key={nanoid()}>
       <Logo src={require('../../services/images/logo.png')} alt="my_logo" />
       <BgImg
         src={require('../../services/images/bg_img.png')}
@@ -20,10 +22,10 @@ export default function TweetsCard({ users, follow, handleChangeFollowers }) {
       <Img src={avatar} alt={user} />
       <BorderImg></BorderImg>
       <ImgBox>
-        <Text>{tweets} TWEETS</Text>
-        <Text>{followers + 1} FOLLOWERS</Text>
+        <Text>{tweets}105 TWEETS</Text>
+        <Text>10{followers + 1} FOLLOWERS</Text>
       </ImgBox>
-      <Button
+      <CardBtn
         type="button"
         onClick={() =>
           handleChangeFollowers(id, followers, follow[index], index)
@@ -31,7 +33,7 @@ export default function TweetsCard({ users, follow, handleChangeFollowers }) {
         followed={follow[index]}
       >
         {follow[index] ? 'Following' : 'Follow'}
-      </Button>
+      </CardBtn>
     </Card>
   ));
 }
