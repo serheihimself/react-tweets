@@ -1,4 +1,4 @@
-   WebTweets - personal multipage project
+   WebTweets - personal client-oriented project
 
 WebTweets- small SPA (single page application) project. It presents a simple connection to the mocapi.io server to display a list of tweets-users, perform some simple operations, and navigate the page.
 
